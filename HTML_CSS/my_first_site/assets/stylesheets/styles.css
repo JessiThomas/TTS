@@ -1,0 +1,25 @@
+body {
+	background-color:black;
+	color:white;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(vnyltle.ttf);
+    font-weight: bold;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	font-family: sans-serif;
+	text-align: center;
+}
+
+.bluetext {
+	color:blue
+	font-size: 15px;
+}
+

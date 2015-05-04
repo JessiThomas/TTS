@@ -1,0 +1,28 @@
+#content {
+  width: 600px;
+  background: #fff;
+ /* border on all sides */
+  border: 2px solid navy;
+  padding: 20px; /*adds 20px of space to all sides */
+  margin: 20px auto; /*adds 20 px of space to ??*/
+}
+
+#footer {
+	height: 20px;
+	width: 600px;
+	margin: auto;
+	background: #336699;
+	color: #fff;
+	border: 10px solid yellow;
+	padding: 20px;
+}
+
+body {
+	background-image: url(../images/background2.jpg);
+}
+
+img {
+	width: 100px;
+	float: left;
+	margin-right: 10px;
+}

@@ -1,0 +1,10 @@
+h1{
+    font-family: myFirstFont;
+    src: url(penelopeanne.ttf);
+	color: violet;
+	font-size: 200%
+}
+
+#fave {
+	color: chartreuse;
+}

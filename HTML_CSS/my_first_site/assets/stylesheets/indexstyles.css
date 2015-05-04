@@ -1,0 +1,29 @@
+
+
+body {
+	font-family: arial;
+	background-color: white;}
+
+h1 {
+	text-align: center;
+	background-color: #0088dd
+	padding: 10px;
+	;
+}
+a.homepage: link, a.homepage:visited {
+  padding: 1px 10px 1px 10px;
+   color: #fff;
+   background: #666;
+   border-radius: 3px;
+   border: 1px outset rgba(50,50,50,.5);
+   font-family: georgia, serif;
+   font-size: 14px;
+   font-style: italic;
+   text-decoration: none;}
+
+p {
+	border-style: solid;
+	border-color: #0088dd;
+	text-align: center;
+	p.italic { font-style: italic; }
+}
