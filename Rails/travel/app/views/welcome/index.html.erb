@@ -1,0 +1,23 @@
+<h1>Welcome to my Travel Site!</h1>
+<p>This is my very awesome travel site.</p>
+
+<p>Some day I'd like to visit: <strong><%= @homeland %></strong></p>
+
+<ul>
+<% @countries.each do |country| %>
+  <li><%= country %></li>
+<% end %>
+</ul>
+
+<% @travel_pics.each do |pics| %>
+	<%= image_tag pics %>
+<% end %>
+
+
+
+
+<!--<%= image_tag "Italy.jpg", alt: "Italy", id: "Italy", class: "country", height: '100', width: '100' %>
+<%= image_tag "CzechRepublic.jpg", alt: "Czech Republic", id: "Czech Republic", class: "country", height: '100', width: '100' %>
+<%= image_tag "Spain.jpg", alt: "Spain", id: "Spain", class: "country", height: '100', width: '100' %>
+<%= image_tag "Turkey.jpg", alt: "Turkey.jpg", id: "Turkey", class: "country", height: '100', width: '100' %>
+<%= image_tag "Russia.jpg", alt: "Russia", id: "Russia", class: "country", height: '100', width: '100' %>-->

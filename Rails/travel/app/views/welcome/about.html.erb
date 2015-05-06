@@ -1,0 +1,19 @@
+<h1>About me</h1>
+<p>This page is all about Jessi.</p>
+
+<p>My favorite color is <%= @color %>.</p>
+<!--<p>My shoe size is <%= @size %>.</p>-->
+
+<% if @size == 8 %>
+	<p>My shoe size is <%= @size %>. I have average feet.</p>
+<% elsif @size >= 13 %>
+	<p>Size <%= @size %>? Waka Fock says stay home. Waka.</p>
+<% else %>
+	<p>My shoe size is <%= @size %></p>
+<% end %>
+
+<style>
+  body {
+    background: <%= @color %>;
+  }
+</style>

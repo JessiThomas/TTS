@@ -12,3 +12,4 @@ puts "Your first roll is: " + my_roll.inspect
 
 neighbor_roll = roll(dice)
 puts "Your neighbor's roll is: " + neighbor_roll.inspect
+
