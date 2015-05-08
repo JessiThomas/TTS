@@ -10,13 +10,14 @@
 </ul>
 
 <% @travel_pics.each do |pics| %>
-	<%= image_tag pics %>
+	<p><%= image_tag pics, class: "img-responsive", width: "900" %></p>
 <% end %>
 
 
 
 
-<!--<%= image_tag "Italy.jpg", alt: "Italy", id: "Italy", class: "country", height: '100', width: '100' %>
+
+<!--<%= image_tag "Italy2.jpg", alt: "Italy", id: "Italy", class: "country", height: '100', width: '100' %>
 <%= image_tag "CzechRepublic.jpg", alt: "Czech Republic", id: "Czech Republic", class: "country", height: '100', width: '100' %>
 <%= image_tag "Spain.jpg", alt: "Spain", id: "Spain", class: "country", height: '100', width: '100' %>
 <%= image_tag "Turkey.jpg", alt: "Turkey.jpg", id: "Turkey", class: "country", height: '100', width: '100' %>

@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+#cornflowerblue_btn{
+	background-color:cornflowerblue;
+	border-color:cornflowerblue;
+}
+
+#lightblue_btn{
+	background-color:lightblue;
+	border-color:lightblue;
+}
