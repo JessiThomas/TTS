@@ -1,0 +1,61 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body {
+		font-family: 'Pathway Gothic One', sans-serif;
+		height: 100%;
+		background-color: #333;
+		background: url(<%= asset_path "Bear.jpeg" %>) no-repeat center center fixed;
+		background-size: cover;
+}
+
+.cant-see-me {
+	display: none;
+}
+
+.small-text {
+	font-size: .75em;
+}
+
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.panel {
+	background-color: rgba(227, 227, 227, .7);
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.nav .navbar-nav .navbar-right {
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.tweet {
+	 padding: 30px;
+}
+
+h5 {
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+
+
+p {
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.navbar a {
+	font-family: 'Pathway Gothic One', sans-serif;
+}
