@@ -29,9 +29,15 @@ body {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	border-radius: 10px;
+	font-family: 'Rock Salt', cursive;
+}
+
+.navbar{
+		border-radius: 10px;
+		font-family: 'Rock Salt', cursive;
 }
 
 h1 {
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Rock Salt', cursive;
 }
 

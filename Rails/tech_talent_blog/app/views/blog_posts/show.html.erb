@@ -1,11 +1,10 @@
 <p id="notice"><%= notice %></p>
-
 <div class="panel panel-primary">
   <div class="panel-heading">
     <%= @blog_post.title %>
   </div>
   <div class="panel-body">
-    <p>by <strong><%= @blog_post.user.email %></strong></p> on <%= @blog_post.created_at.strftime("%A, %B, %e, %Y, at %r") %></p>
+    <p>by <strong> <%= link_to @blog_post.user.username, user_profile_path(id: @blog_post.user.id) %></strong></p> on <%= @blog_post.created_at.strftime("%A, %B, %e, %Y, at %r") %></p>
     <p><%= @blog_post.blog_entry %></p>
   </div>
  </div>
@@ -30,8 +29,17 @@
   </div>
   <% @blog_post.comments.each do |comment| %>
     <div class="panel-body">
-      <p><strong><%= comment.user.email %></strong> said <%= time_ago_in_words (comment.created_at) %> ago: </p>
+      <p><strong><%= link_to comment.user.username, user_profile_path(id: comment.user.id) %></strong> said <%= time_ago_in_words (comment.created_at) %> ago: </p>
       <p><%= comment.comment_entry %></p>
     </div>
   <% end %>
  </div>
+
+ <% if current_user.id == @blog_post.user.id %>
+ <div class='panel-footer'>
+      <p>
+       <%= link_to 'Edit', edit_blog_post_path(blog_post), class: "btn btn-default" %>
+       <%= link_to 'Destroy', blog_post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default" %>
+      </p>
+      </div>
+<% end %>

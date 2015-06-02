@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(version: 20150505133129) do
     t.text     "notes"
     t.date     "due"
     t.boolean  "done"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at", null: true
+    t.datetime "updated_at", null: true
   end
 
 end

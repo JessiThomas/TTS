@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   root 'to_dos#index'
+  
+  get 'about' => 'welcome#about'
+  get 'contact' => 'welcome#contact'
 
   resources :to_dos
   # The priority is based upon order of creation: first created -> highest priority.
